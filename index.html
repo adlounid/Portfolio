@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Portfolio | Frontend Developer</title>
+  <meta
+    name="description"
+    content="Portfolio for a frontend developer from Grit Academy with projects in HTML, CSS, JavaScript and React."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="preload" as="image" href="bild-hero.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="background-orb orb-three"></div>
+    <div class="noise-layer"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        Portfolio
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Öppna meny"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="#about">Om mig</a>
+        <a href="#projects">Projekt</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section section-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Frontend Developer • Grit Academy</p>
+          <p class="hero-name">Daniel Adlouni</p>
+          <h1>Modern frontend med känsla.</h1>
+          <p class="hero-text">
+            HTML, CSS, JavaScript och React.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Se projekt</a>
+            <a class="button button-secondary" href="#contact">Kontakta mig</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-meta-card">
+              <span class="meta-label">Styrka</span>
+              <strong>Responsiva gränssnitt</strong>
+            </div>
+            <div class="hero-meta-card">
+              <span class="meta-label">Fokus</span>
+              <strong>UI, struktur och känsla</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <span class="status-pill">Tillgänglig för frontendjobb</span>
+              <span class="hero-location">Sverige</span>
+            </div>
+
+            <div class="portrait-frame">
+              <img
+                src="bild-hero.jpg"
+                alt="Porträttbild för portfolio"
+                class="hero-photo"
+                width="900"
+                height="1611"
+                fetchpriority="high"
+                decoding="async"
+              >
+            </div>
+
+            <div class="hero-card-bottom">
+              <div>
+                <span class="meta-label">Profil</span>
+                <strong>Frontend med energi och tydlig design</strong>
+              </div>
+              <div class="mini-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section intro-strip" data-reveal>
+        <div class="strip-card">
+          <span class="strip-index">01</span>
+          <p>Jag gör idéer tydliga i webben med ren frontend, stark layout och responsiv design.</p>
+        </div>
+        <div class="strip-card">
+          <span class="strip-index">02</span>
+          <p>Jag har pluggat på <strong>Grit Academy</strong> och vill bygga snygga digitala upplevelser.</p>
+        </div>
+        <div class="strip-card">
+          <span class="strip-index">03</span>
+          <p>Jag trivs bäst när design och kod känns lika genomarbetade.</p>
+        </div>
+      </section>
+
+      <section class="section about-layout">
+        <div class="about-panel" data-reveal>
+          <p class="eyebrow">Om mig</p>
+          <h2>Jag vill skapa frontend som både ser stark ut och känns enkel att använda.</h2>
+          <p class="section-text">
+            Mitt fokus ligger på moderna gränssnitt med tydlig struktur, bra rytm och en design
+            som känns levande utan att bli rörig. Jag gillar att bygga sidor som känns snabba,
+            rena och snygga direkt.
+          </p>
+        </div>
+
+        <div class="focus-grid" data-reveal>
+          <article class="focus-card">
+            <span class="focus-kicker">Design</span>
+            <h3>Ren och tydlig layout</h3>
+            <p>Jag jobbar med mellanrum, kontrast och hierarki så att innehållet blir lätt att ta in.</p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-kicker">Kod</span>
+            <h3>Frontend som håller ihop</h3>
+            <p>Jag gillar tydlig struktur i koden och komponenttänk som gör projekt enklare att bygga vidare på.</p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-kicker">Upplevelse</span>
+            <h3>Detaljer som lyfter helheten</h3>
+            <p>Animationer, hover states och övergångar ska förstärka designen, inte störa den.</p>
+          </article>
+          <article class="focus-card accent-card">
+            <span class="focus-kicker">Stack</span>
+            <div class="stack-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Responsive</span>
+              <span>UI Animation</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-header" data-reveal>
+          <div>
+            <p class="eyebrow">Projekt</p>
+            <h2>Projekt som visar min stil och mitt frontendfokus.</h2>
+          </div>
+          <p class="section-text narrow">
+            Tre projekt där jag har jobbat med form, struktur och känsla i gränssnittet.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <a
+            class="project-card project-mauniele"
+            data-reveal
+            href="https://mauniele.se/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Öppna Mauniele"
+          >
+            <div class="project-surface">
+              <div class="project-topline">
+                <span class="project-index">01</span>
+                <span class="project-type">Brand / UI</span>
+              </div>
+              <h3>Mauniele</h3>
+              <p>Visuell identitet, ren layout och en stil som känns modern och medveten.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <span class="visit-link">Besök</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="project-card project-foodlast"
+            data-reveal
+            href="https://foodlast.se/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Öppna FoodLast"
+          >
+            <div class="project-surface">
+              <div class="project-topline">
+                <span class="project-index">02</span>
+                <span class="project-type">Product / React</span>
+              </div>
+              <h3>FoodLast</h3>
+              <p>Strukturerat gränssnitt med fokus på tydlighet, användarvänlighet och komponenttänk.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span>React</span>
+                  <span>CSS</span>
+                  <span>Responsive</span>
+                </div>
+                <span class="visit-link">Besök</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            class="project-card project-elevatenet"
+            data-reveal
+            href="https://elevatenet.se/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Öppna Elevatenet"
+          >
+            <div class="project-surface">
+              <div class="project-topline">
+                <span class="project-index">03</span>
+                <span class="project-type">Frontend / Motion</span>
+              </div>
+              <h3>Elevatenet</h3>
+              <p>Frontend med tydlig struktur, rörelse och detaljer som gör sidan mer levande.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span>JavaScript</span>
+                  <span>Animation</span>
+                  <span>UX</span>
+                </div>
+                <span class="visit-link">Besök</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-card" data-reveal>
+          <div class="contact-copy">
+            <p class="eyebrow">Kontakt</p>
+            <h2>Vill du jobba med någon som gillar snygg frontend och tydlig struktur?</h2>
+            <p class="section-text">
+              Jag är redo för nya projekt och nya möjligheter inom frontend.
+              Hör av dig om du vill samarbeta eller se mer av mitt arbete.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:dinmail@example.com">Skicka mail</a>
+            <a class="button button-secondary" href="#top">Till toppen</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
